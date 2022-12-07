@@ -5,10 +5,10 @@ metadata:
   name: mongosource
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 30s
   path: ./kustomize
   prune: true
   sourceRef:
     kind: GitRepository
     name: mongosource
-  targetNamespace: default
+  targetNamespace: flux-system
